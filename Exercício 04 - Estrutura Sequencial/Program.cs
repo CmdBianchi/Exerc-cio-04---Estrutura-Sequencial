@@ -15,10 +15,11 @@ namespace Exercício_04___Estrutura_Sequencial
         static void Msg() {
             Console.WriteLine("Mostre o número e o salário do funcionário, com duas casas decimais."); 
         }
-        static void Id() {
+        static int Id() {
             int numero;
             Console.Write("Número de série do funcionário: ");
             numero = int.Parse(Console.ReadLine());
+            return numero;
         }
         /////////////////////////////////////////////////////////////////////////////////////////////
         /// -------> END
