@@ -6,10 +6,16 @@ namespace Exercício_04___Estrutura_Sequencial
     {
         /// -------> START / MAIN 
         /////////////////////////////////////////////////////////////////////////////////////////////
-        static void Main(string[] args)
-        {
+        static void Main(string[] args){
             Msg();
             Id();
+            Salary();
+
+            int x = Id();
+            double y = Salary();
+            LineBreaker();
+            Console.Write("Número de série: " +x);
+            Console.Write("Número de série: " +y);
         }
         /// -------> FUNCTIONS
         /////////////////////////////////////////////////////////////////////////////////////////////
@@ -24,18 +30,20 @@ namespace Exercício_04___Estrutura_Sequencial
             return numero;
         }
         /*------------------------------------------------------------------------------------------*/
-        static void Salary() {
-            double hours, salary;
+        static double Salary() {
+            double hours, hourvalue, salary;
 
-            Console.Write("Difite a quantede de horas trabalhadas: ");
+            Console.Write("Define a quantidade de horas trabalhadas: ");
             hours = double.Parse(Console.ReadLine());
-            
-
-
-
+            Console.Write("Valor por hora: ");
+            hourvalue = double.Parse(Console.ReadLine());
+            salary = hourvalue * hours;
+            return salary; 
         }
-
-
+        /*------------------------------------------------------------------------------------------*/
+        static void LineBreaker() {  
+            Console.WriteLine("----------------------");               
+        }
         /////////////////////////////////////////////////////////////////////////////////////////////
         /// -------> END
     }
