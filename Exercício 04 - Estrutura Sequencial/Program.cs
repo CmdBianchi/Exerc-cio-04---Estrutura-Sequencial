@@ -8,14 +8,10 @@ namespace Exercício_04___Estrutura_Sequencial
         /////////////////////////////////////////////////////////////////////////////////////////////
         static void Main(string[] args){
             Msg();
+            LineBreaker();
             Id();
             Salary();
-
-            int x = Id();
-            double y = Salary();
             LineBreaker();
-            Console.Write("Número de série: " +x);
-            Console.Write("Número de série: " +y);
         }
         /// -------> FUNCTIONS
         /////////////////////////////////////////////////////////////////////////////////////////////
@@ -38,6 +34,8 @@ namespace Exercício_04___Estrutura_Sequencial
             Console.Write("Valor por hora: ");
             hourvalue = double.Parse(Console.ReadLine());
             salary = hourvalue * hours;
+            Console.Write("O Valor da hoa é:" +salary);
+            Console.WriteLine(" ");
             return salary; 
         }
         /*------------------------------------------------------------------------------------------*/
